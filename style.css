@@ -1,16 +1,17 @@
 :root {
-  --paper: #f4c2c2;
-  --ink: #090909;
-  --muted: #4d3036;
-  --line: rgba(9, 9, 9, 0.18);
+  --paper: #800020;
+  --ink: #f4c2c2;
+  --muted: rgba(244, 194, 194, 0.72);
+  --line: rgba(244, 194, 194, 0.28);
   --burgundy: #800020;
   --teal: #800020;
   --red: #800020;
   --olive: #800020;
-  --blue: #f6d1d1;
+  --blue: #f4c2c2;
   --yellow: #800020;
-  --panel: #f6d1d1;
-  --paper-rgb: 244, 194, 194;
+  --panel: #9a1234;
+  --paper-rgb: 128, 0, 32;
+  --blue-rgb: 244, 194, 194;
   --display-font: Arial, Helvetica, sans-serif;
   --menu-font: "Bebas Neue", Arial, Helvetica, sans-serif;
   --body-font: Arial, Helvetica, sans-serif;
@@ -332,13 +333,13 @@ section {
 
 .project-marquee {
   margin: 16px 0 28px;
-  color: var(--burgundy);
+  color: var(--blue);
   font-size: clamp(22px, 3.4vw, 44px);
 }
 
 .contact-marquee {
   margin: 0 0 32px;
-  color: var(--paper);
+  color: var(--blue);
 }
 
 @keyframes marquee {
@@ -511,7 +512,7 @@ h1,
   min-height: 62px;
   padding: 13px 42px 12px 14px;
   border: 1px solid var(--line);
-  background: rgba(var(--paper-rgb), 0.28);
+  background: rgba(var(--blue-rgb), 0.06);
   color: var(--muted);
   text-align: left;
   font-family: var(--menu-font);
@@ -528,7 +529,7 @@ h1,
   position: absolute;
   right: 14px;
   top: 50%;
-  color: var(--burgundy);
+  color: var(--blue);
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: 900;
@@ -540,7 +541,7 @@ h1,
 .project-tab.active,
 .project-tab:hover {
   border-color: var(--ink);
-  background: var(--panel);
+  background: rgba(var(--blue-rgb), 0.12);
   color: var(--ink);
   transform: translateX(6px);
 }
@@ -672,7 +673,7 @@ h1,
   margin: 22px 0 0;
   padding: 18px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(var(--blue-rgb), 0.08);
   font-style: italic;
 }
 
@@ -859,7 +860,7 @@ h1,
   min-height: 260px;
   padding: 14px;
   border: 1px solid var(--ink);
-  background: var(--paper);
+  background: rgba(var(--blue-rgb), 0.07);
 }
 
 .timeline span {
@@ -883,8 +884,8 @@ h1,
 .footer {
   min-height: 100svh;
   padding-top: var(--section-pt);
-  background: var(--burgundy);
-  color: var(--paper);
+  background: #6f001c;
+  color: var(--blue);
 }
 
 .footer-grid {
@@ -902,7 +903,7 @@ h1,
 .contact-card > span,
 .socials a,
 .copyright {
-  color: rgba(var(--paper-rgb), 0.74);
+  color: rgba(var(--blue-rgb), 0.74);
   font-family: var(--menu-font);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -917,9 +918,9 @@ h1,
   margin-top: 8px;
   padding: 12px 0;
   border: 0;
-  border-bottom: 1px solid rgba(var(--paper-rgb), 0.28);
+  border-bottom: 1px solid rgba(var(--blue-rgb), 0.28);
   background: transparent;
-  color: var(--paper);
+  color: var(--blue);
   text-align: left;
 }
 
@@ -959,7 +960,7 @@ h1,
 
 .to-top {
   margin-top: 80px;
-  color: var(--paper);
+  color: var(--blue);
 }
 
 .copyright {
