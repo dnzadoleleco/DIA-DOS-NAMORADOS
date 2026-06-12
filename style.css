@@ -1081,32 +1081,43 @@ h1,
   }
 
   .about-board {
-    min-height: 620px;
+    min-height: clamp(560px, 142vw, 720px);
+    overflow: hidden;
   }
 
   .floating-card {
-    width: min(68vw, 320px);
+    width: clamp(150px, 54vw, 260px);
+    aspect-ratio: 3 / 4;
   }
 
   .card-a {
-    left: 2%;
+    top: 34px;
+    left: 3%;
+    z-index: 1;
+    transform: rotate(-6deg);
   }
 
   .card-b {
-    top: 174px;
+    top: 86px;
     left: auto;
-    right: 2%;
+    right: 3%;
+    z-index: 4;
+    transform: rotate(5deg);
   }
 
   .card-c {
-    top: 322px;
-    left: 8%;
+    top: 270px;
+    left: 6%;
     right: auto;
+    z-index: 2;
+    transform: rotate(-3deg);
   }
 
   .card-d {
-    right: 4%;
-    bottom: 40px;
+    right: 5%;
+    bottom: 34px;
+    z-index: 3;
+    transform: rotate(4deg);
   }
 
   .socials {
@@ -1188,6 +1199,33 @@ h1,
 
   .case-media.has-two-images img {
     height: clamp(240px, 72vw, 380px);
+  }
+
+  .about-board {
+    min-height: clamp(520px, 138vw, 640px);
+    margin-inline: -2px;
+  }
+
+  .floating-card {
+    width: clamp(142px, 52vw, 216px);
+  }
+
+  .card-a {
+    left: 1%;
+  }
+
+  .card-b {
+    right: 1%;
+  }
+
+  .card-c {
+    top: 248px;
+    left: 4%;
+  }
+
+  .card-d {
+    right: 3%;
+    bottom: 28px;
   }
 
   .disciplines div,
