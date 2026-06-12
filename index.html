@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio pessoal de momentos, fotos e memorias."
+    />
+    <title>Artur</title>
+    <link rel="icon" href="data:,">
+    <meta name="theme-color" content="#fffdf8">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader" aria-hidden="true">
+      <span id="loaderText">0</span>
+    </div>
+
+    <header class="navigation" aria-label="Navegacao principal">
+      <button class="brand" type="button" data-scroll-to="home" aria-label="Voltar ao inicio">
+        <span class="brand-name">VITORIA </span>
+        <span class="brand-dot"></span>
+        <span class="brand-section" data-section-label>INICIO</span>
+      </button>
+
+      <nav class="desktop-menu" aria-label="Secoes">
+        <a href="#home">INICIO</a>
+        <a href="#work">MOMENTOS</a>
+        <a href="#about">SOBRE</a>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu" aria-hidden="true">
+        <a href="#home">INICIO</a>
+        <a href="#work">MOMENTOS</a>
+        <a href="#about">SOBRE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-marquee" aria-hidden="true">
+          <span>SEMPRE PENSO EM NOS &lt; SEMPRE PENSO EM NOS &lt; SEMPRE PENSO EM NOS &lt; SEMPRE PENSO EM NOS</span>
+          <span>EM NOS DOIS</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">ALGUNS MOMENTOS / FOTOS</p>
+            <h1>AMOR</h1>
+            <button class="hero-cta magnetic" type="button" data-scroll-to="work">
+              Fotos
+              <span>-></span>
+            </button>
+          </div>
+
+          <figure class="hero-image reveal-card">
+            <img src="Imagens/WhatsApp Image 2026-06-11 at 21.38.45 (1).jpeg" alt="Texto Flores sobre fundo preto" />
+          </figure>
+        </div>
+
+        <div class="skill-row" aria-label="Especialidades">
+          <span>Momentos</span>
+          <span>Fotos</span>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-head">
+          <span>Destaques</span>
+          <h2>Selecao de fotos</h2>
+        </div>
+
+        <div class="project-marquee" aria-hidden="true">
+          <span>21 DE ABRIL - 21 DE ABRIL - 21 DE ABRIL - 21 DE ABRIL</span>
+        </div>
+
+        <div class="project-stage">
+          <aside class="project-list" role="tablist" aria-label="Lista de projetos">
+            <button class="project-tab active" type="button" role="tab" aria-selected="true" data-project="0">MEU AMOR</button>
+            <button class="project-tab" type="button" role="tab" aria-selected="false" data-project="1">MINHA PRINCESA</button>
+            <button class="project-tab" type="button" role="tab" aria-selected="false" data-project="2">DONA DO MEU CORACAO</button>
+            <button class="project-tab" type="button" role="tab" aria-selected="false" data-project="3">MEU ANJO</button>
+          </aside>
+
+          <article class="case-study" aria-live="polite">
+            <div class="case-media">
+              <img id="projectImage" src="Imagens/WhatsApp Image 2026-06-11 at 21.38.45.jpeg" alt="Visual do projeto Meu Amor" />
+              <img id="projectImageSecondary" src="" alt="" hidden />
+            </div>
+
+            <div class="case-content">
+              <h3 id="projectTitle"></h3>
+              <dl class="disciplines" id="projectDisciplines"></dl>
+              <div id="projectText" class="project-text"></div>
+              <div class="case-actions">
+                <button class="arrow-button" type="button" data-prev-project>Previa-></button>
+                <button class="arrow-button" type="button" data-next-project>Proximo-></button>
+              </div>
+            </div>
+          </article>
+
+          <div class="project-data-list" hidden>
+            <article
+              class="project-data"
+              data-title="MEU AMOR"
+              data-year="2025/04"
+              data-color="#090909"
+              data-image="Imagens/WhatsApp Image 2026-06-11 at 21.38.45.jpeg"
+              data-image-alt="Visual do projeto Meu Amor"
+            >
+              <dl data-project-disciplines>
+                <div class="discipline-single">
+                  <dd>SEMPRE SONHEI COM NOS</dd>
+                </div>
+              </dl>
+              <div data-project-text>
+                <p>Tenho poucos registros fotograficos desse dia, mas carrego memorias que jamais vou esquecer. Voce chegou de um jeito repentino e, quando percebi, eu ja nao conseguia imaginar minha vida sem voce.</p>
+                <blockquote>
+                  "Nao me lembro mais qual foi nosso comeco. Sei que nao comecamos pelo comeco. Ja era amor antes de ser."
+                  <cite>- Lucilene Machado, Claricianas</cite>
+                </blockquote>
+              </div>
+            </article>
+
+            <article
+              class="project-data"
+              data-title="MINHA PRINCESA"
+              data-year="2025/05"
+              data-color="#090909"
+              data-image="Imagens/WhatsApp Image 2026-06-11 at 21.38.45 (2).jpeg"
+              data-image-alt="Visual do projeto Minha Princesa"
+              data-media-height="clamp(560px, 62vw, 720px)"
+            >
+              <dl data-project-disciplines>
+                <div class="discipline-single">
+                  <dd>DATAS QUE VIRARAM MEMORIA</dd>
+                </div>
+              </dl>
+              <div data-project-text>
+                <p>Datas comemorativas nunca foram tao importantes para mim. Pelo menos era isso que eu diria antes de voce chegar. Hoje, qualquer motivo simples vira celebracao quando posso estar ao seu lado.</p>
+                <p>Eu amo te amar e amo viver nossos momentos. Cada conquista sua transborda alegria em mim, e eu me sinto honrado por poder acompanhar seus passos de perto.</p>
+                <blockquote>
+                  "A melhor coisa que alguma vez vais aprender e a amar e ser amado."
+                  <cite>- Moulin Rouge</cite>
+                </blockquote>
+              </div>
+            </article>
+
+            <article
+              class="project-data"
+              data-title="DONA DO MEU CORACAO"
+              data-year="2025"
+              data-color="#090909"
+              data-image="Imagens/WhatsApp Image 2026-06-11 at 21.56.13 (1).jpeg"
+              data-image-alt="Visual do projeto Dona do Meu Coracao"
+              data-media-height="clamp(560px, 62vw, 720px)"
+            >
+              <dl data-project-disciplines>
+                <div class="discipline-single">
+                  <dd>SEU OLHAR</dd>
+                </div>
+              </dl>
+              <div data-project-text>
+                <p>Como eu poderia me esquecer dos seus olhos? Por mim, passaria horas admirando esse olhar e me perdendo na beleza que ele carrega.</p>
+                <p>Atraves dele, vejo uma mulher determinada, inteligente, amorosa e dona de um futuro brilhante. Sao esses detalhes que me fazem acordar todos os dias te amando ainda mais.</p>
+                <blockquote>
+                  "Seus olhos me fazem acreditar que flores vencem tempestades"
+                  <cite>- Victor Machado, Henrique</cite>
+                </blockquote>
+              </div>
+            </article>
+
+            <article
+              class="project-data"
+              data-title="MEU ANJO"
+              data-year="2025"
+              data-color="#090909"
+              data-image="Imagens/WhatsApp Image 2026-06-11 at 22.48.32.jpeg"
+              data-image-secondary="Imagens/WhatsApp Image 2026-06-11 at 21.56.13.jpeg"
+              data-image-alt="Visual do projeto Meu Anjo"
+              data-image-secondary-alt="Segundo visual do projeto Meu Anjo"
+              data-media-height="clamp(560px, 62vw, 720px)"
+              data-media-fit="cover"
+            >
+              <dl data-project-disciplines>
+                <div class="discipline-single">
+                  <dd>O NOSSO CANTO</dd>
+                </div>
+              </dl>
+              <div data-project-text>
+                <p>
+Em qual capitulo do livro da minha vida, esse garoto iria descobrir que estaria diante da melhor coisa que poderia ter acontecido? Exatamente no dia 21/04/2025 que o capitulo mais importante da minha vida estaria se iniciando. Naquele momento, algo me dizia que eu estaria prestes a me tornar uma pessoa melhor, e de fato me tornei, graças a você. Cada dia que se passa, eu tenho mais certeza de que eu encontrei a pessoa certa para dividir minha vida. Eu amo te amar, e quero morrer de amando! Feliz dia dos namorados.</p>
+                <blockquote>
+                  " Eu passei a vida inteira procurando por você, sem saber que meu coração já te desenhava desde a infância."
+                  <cite>- Eu mesmo, Gabriel.</cite>
+                </blockquote>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-layout">
+          <div class="about-heading">
+            <h2>Feito para contar a nossa historia</h2>
+          </div>
+        </div>
+
+        <div class="about-board" aria-label="Galeria visual">
+          <button
+            class="floating-card card-a"
+            type="button"
+            data-lightbox-src="Imagens/WhatsApp Image 2026-06-11 at 21.38.46.jpeg"
+            data-lightbox-alt="Foto do nosso momento"
+            aria-label="Abrir foto do nosso momento em tamanho inteiro"
+          >
+            <img src="Imagens/WhatsApp Image 2026-06-11 at 21.56.13.jpeg" alt="Foto do nosso momento" />
+          </button>
+          <button
+            class="floating-card card-b"
+            type="button"
+            data-lightbox-src="Imagens/WhatsApp Image 2026-06-12 at 08.02.29.jpeg"
+            data-lightbox-alt="Foto especial do casal"
+            aria-label="Abrir foto especial do casal em tamanho inteiro"
+          >
+            <img src="Imagens/WhatsApp Image 2026-06-12 at 08.02.52.jpeg" alt="Foto especial do casal" />
+          </button>
+          <button
+            class="floating-card card-c"
+            type="button"
+            data-lightbox-src="Imagens/WhatsApp Image 2026-06-12 at 08.02.52.jpeg"
+            data-lightbox-alt="Registro de um momento especial"
+            aria-label="Abrir registro de um momento especial em tamanho inteiro"
+          >
+            <img src="Imagens/WhatsApp Image 2026-06-11 at 21.38.45.jpeg" alt="Registro de um momento especial" />
+          </button>
+          <button
+            class="floating-card card-d"
+            type="button"
+            data-lightbox-src="Imagens/WhatsApp Image 2026-06-12 at 08.02.53.jpeg"
+            data-lightbox-alt="Foto guardada na nossa historia"
+            aria-label="Abrir foto guardada na nossa historia em tamanho inteiro"
+          >
+            <img src="Imagens/WhatsApp Image 2026-06-12 at 08.02.53.jpeg" alt="Foto guardada na nossa historia" />
+          </button>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline" aria-label="Linha do tempo">
+            <article>
+              <span>2026</span>
+              <h3>Currently</h3>
+              <p>Atualize com seu momento atual, cargo, foco e principais projetos.</p>
+            </article>
+            <article>
+              <span>2025</span>
+              <h3>Project Milestone</h3>
+              <p>Inclua uma conquista importante, lancamento, parceria ou resultado.</p>
+            </article>
+            <article>
+              <span>2024</span>
+              <h3>Brand Launch</h3>
+              <p>Conte um marco da sua trajetoria de forma curta e visual.</p>
+            </article>
+            <article>
+              <span>2023</span>
+              <h3>Creative System</h3>
+              <p>Mostre uma evolucao de identidade, campanha ou processo criativo.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer" id="contact">
+        <div class="contact-marquee" aria-hidden="true">
+          <span>LINDA -> CHEIROSA -> AMIGA -></span>
+          <span>CHEIROSA -> GOSTOSA -></span>
+        </div>
+
+        <div class="footer-grid">
+          <div>
+            <p class="eyebrow">Para</p>
+            <h2>Doutora Pet</h2>
+          </div>
+
+          <div class="contact-card">
+            <span>Email</span>
+            <button id="copyBtn" type="button">
+              <strong id="textToCopy">arturgemeos06@gmail.com</strong>
+              <em>Copiar</em>
+            </button>
+            <p id="popup" role="status" aria-live="polite">Email copiado</p>
+          </div>
+        </div>
+
+        <button class="to-top" id="goToTop" type="button">Back to top</button>
+        <p class="copyright">(c) 2026 copyright Artur de Almeida Dantas</p>
+      </section>
+    </main>
+
+    <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Fechar imagem">X</button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
